@@ -1,0 +1,718 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
+
+:root {
+  --maincolor: #161618;
+  --secondrycolor: #d0f939;
+  --green1: #60e9f1;
+  --green2: #62ffb8;
+  --green3: #03a64a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+body {
+  background: var(--maincolor);
+  
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--maincolor);
+  box-shadow: 10px 0px 5px gray;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.mobilenav {
+  display: none;
+}
+.nav ul {
+  display: flex;
+  align-items: self-start;
+
+  list-style: none;
+}
+.nav ul li {
+  margin-left: 22px;
+  margin-right: 20px;
+  color: var(--secondrycolor);
+  font-size: 29px;
+  line-height: 55px;
+  transition: color linear 1s;
+}
+.nav ul li:hover {
+  color: var(--green2);
+}
+.nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+.hcontent {
+  padding: 9px;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+.firstletter {
+  color: var(--secondrycolor);
+  font-size: 35px;
+}
+
+.header {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  box-shadow: 10px 0px 5px gray;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header h3 {
+  color: var(--secondrycolor);
+  font-size: 3.5em;
+  margin-top: 170px;
+  margin-left: 40px;
+}
+.header h1 {
+  color: white;
+  font-size: 5em;
+  margin-left: 40px;
+}
+.header h4 {
+  color: white;
+  font-size: 1.5em;
+  margin-left: 140px;
+}
+.btn {
+  padding: 10px;
+  border: none;
+  background: var(--secondrycolor);
+  border-radius: 20px;
+  color: var(--maincolor);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 20px 0 0 240px;
+}
+.btn:hover {
+  box-shadow: 0 0 15px var(--secondrycolor);
+}
+.hshadow {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--secondrycolor);
+  opacity: 0.7;
+  box-shadow: 0px 0px 5px var(--secondrycolor), 0 0 50px var(--secondrycolor),
+    0 0 75px var(--secondrycolor), 0 0 200px var(--secondrycolor);
+  position: absolute;
+  animation: hsh 10s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes hsh {
+  0% {
+    right: 99%;
+    top: 5%;
+  }
+  25% {
+    right: 99%;
+    top: 15%;
+  }
+  50% {
+    right: 99%;
+    top: 30%;
+  }
+  75% {
+    right: 99%;
+    top: 40%;
+  }
+  100% {
+    right: 99%;
+    top: 50%;
+  }
+}
+
+.rheaderimg {
+  width: 70%;
+  margin: 30px 0 0 160px;
+}
+
+.about {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+
+  padding: 30px;
+}
+
+.who {
+  width: 30%;
+  height: 450px;
+  background-color: var(--maincolor);
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--secondrycolor), 0 0 20px var(--secondrycolor);
+  margin: 20px;
+  padding: 20px;
+}
+.who h2 {
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 3em;
+}
+.who div {
+  width: 60px;
+  height: 5px;
+  margin-left: 35px;
+  margin: 10px;
+  background-color: var(--secondrycolor);
+}
+.who h3 {
+  color: white;
+  padding: 10px;
+  padding-top: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.who p {
+  color: white;
+  padding: 10px;
+  padding-top: 10px;
+  font-size: 1em;
+  text-align: justify;
+}
+.who button {
+  border: none;
+  padding: 15px;
+  margin: 30px 0 0 100px;
+  background-color: var(--maincolor);
+  color: var(--secondrycolor);
+  font-weight: bold;
+  border-radius: 20px;
+}
+.who button:hover {
+  background-color: var(--secondrycolor);
+  color: var(--maincolor);
+  box-shadow: 0 0 15px var(--secondrycolor);
+}
+.personal {
+  width: 30%;
+  height: 450px;
+  background-color: var(--maincolor);
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--secondrycolor), 0 0 20px var(--secondrycolor);
+  margin: 20px;
+  padding: 20px;
+}
+.personal h2 {
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 3em;
+}
+.personal div {
+  width: 60px;
+  height: 5px;
+  margin-left: 35px;
+  margin: 10px;
+  background-color: var(--secondrycolor);
+}
+.personal ul {
+  list-style: none;
+  padding: 20px;
+}
+.personal ul li {
+  padding: 7px;
+  color: white;
+}
+.personal ul li span {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+.homesocial {
+  margin-left: 50px;
+}
+
+.homesocialicon {
+  color: var(--secondrycolor);
+  margin-left: 10px;
+
+  font-size: 1.5em;
+}
+.homesocialicon:hover {
+  color: white;
+}
+.expertise {
+  width: 30%;
+  height: 450px;
+  background-color: var(--maincolor);
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--secondrycolor), 0 0 20px var(--secondrycolor);
+  margin: 20px;
+  padding: 20px;
+}
+.expertise h2 {
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 3em;
+}
+.expertise div {
+  width: 60px;
+  height: 5px;
+  margin-left: 35px;
+  margin: 10px;
+  background-color: var(--secondrycolor);
+}
+.expertise h6 {
+  color: white;
+  font-size: 1.7em;
+  padding: 20px;
+}
+.expertise p {
+  color: rgb(226, 218, 218);
+  padding-left: 25px;
+}
+.expertise hr {
+  width: 270px;
+  margin: 10px 0 10px 30px;
+}
+.tabout {
+  color: white;
+  font-size: 4em;
+  margin-left: 40%;
+  padding: 25px;
+}
+.tabout span {
+  color: var(--secondrycolor);
+}
+
+.getintouch {
+  width: 100%;
+  height: 350px;
+  background-color: var(--maincolor);
+  margin-top: 70px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px gray;
+}
+.getintouch h1 {
+  font-size: 50px;
+  color: var(--secondrycolor);
+  margin-left: 40%;
+  padding: 20px;
+}
+.getintouch p {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.getintouch button {
+  color: var(--secondrycolor);
+  padding: 15px;
+  background: var(--maincolor);
+  border-radius: 10px;
+  border: none;
+  margin-left: 43%;
+  margin-top: 20px;
+}
+.getintouch button:hover {
+  color: var(--maincolor);
+  background-color: var(--secondrycolor);
+  box-shadow: 0 0 15px var(--secondrycolor);
+}
+
+.portfolio {
+  width: 100%;
+  min-height: 300px;
+  background: var(--maincolor);
+}
+.porttittele {
+  color: white;
+  font-size: 4em;
+  margin-left: 40%;
+  padding: 25px;
+}
+.porttittele span {
+  color: var(--secondrycolor);
+}
+.portfolio img {
+  width: 30%;
+  margin: 50px 0 0 60px;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+}
+.portfolio img:hover {
+  transform: scale(0.9);
+}
+.portimgtittle {
+  color: white;
+  font-size: 20px;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+.portimgtittle:hover {
+  color: var(--secondrycolor);
+}
+
+#contact {
+  color: white;
+  font-size: 4em;
+  margin-left: 40%;
+  padding: 30px;
+  margin-top: 60px;
+}
+#contact span {
+  color: var(--secondrycolor);
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+
+  margin: 0 auto;
+  background: var(--maincolor);
+}
+.contact-form input {
+  background: var(--maincolor);
+  border-radius: 10px;
+  border: 2px solid var(--secondrycolor);
+  color: white;
+}
+.contact-form input:hover {
+  box-shadow: 0 0 10px var(--secondrycolor);
+}
+.contact-form button {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--secondrycolor);
+  background-color: var(--maincolor);
+  color: var(--secondrycolor);
+  margin: 20px;
+}
+.contact-form button:hover {
+  box-shadow: 0 0 15px var(--secondrycolor);
+  background-color: var(--secondrycolor);
+  color: var(--maincolor);
+}
+.i1 {
+  width: 40%;
+  height: 50px;
+  margin: 20px;
+  padding: 20px;
+}
+.i2 {
+  width: 40%;
+  height: 50px;
+  margin: 20px;
+  padding: 20px;
+}
+.i3 {
+  width: 85%;
+  height: 50px;
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+}
+.i4 {
+  width: 85%;
+  height: 150px;
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+}
+.footer {
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 10px gray;
+  margin-top: 20px;
+}
+.footer p {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.footer p span {
+  color: var(--secondrycolor);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .mobilenav {
+    display: flex;
+  }
+  .mn {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    list-style: none;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 10px gray;
+    background-color: var(--maincolor);
+  }
+  .mn li {
+    margin-left: 60px;
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+  }
+  .mn li:hover {
+    color: var(--secondrycolor);
+  }
+  .mn li a {
+    color: inherit;
+  }
+
+  .header {
+    width: 100%;
+    height: 770px;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .header h3 {
+    color: var(--secondrycolor);
+    font-size: 2.5em;
+    margin-top: 370px;
+    margin-left: 70px;
+  }
+  .header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-left: 70px;
+  }
+  .header h4 {
+    color: white;
+    font-size: 12px;
+    margin-left: 70px;
+  }
+  .btn {
+    padding: 7px;
+    border: none;
+    background: var(--secondrycolor);
+    border-radius: 20px;
+    color: var(--maincolor);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 20px 0 0 70px;
+  }
+
+  .rheaderimg {
+    width: 50%;
+    position: relative;
+    bottom: 450px;
+    right: 15%;
+  }
+
+  .about {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .who {
+    width: 90%;
+    height: 500px;
+  }
+  .who h2 {
+ 
+    font-size: 2em;
+  }
+  
+  .who p {
+ 
+    font-size: 0.9em;
+
+  }
+  .who button {
+ 
+    margin: 30px 0 0 50px;
+   
+  }
+ 
+
+  .personal {
+    width: 90%;
+    height: 470px;
+  }
+  .personal h2 {
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 2em;
+  }
+ 
+  
+  .homesocial {
+    margin-left: 10px;
+   position: relative;
+   top: 30px;
+  }
+  
+  
+
+  .expertise {
+    width: 90%;
+    height: 470px;
+  }
+
+  .tabout {
+    color: white;
+    font-size: 4em;
+    margin-left: 15%;
+    padding: 25px;
+  }
+
+  .expertise h2 {
+    
+    font-size: 2em;
+  }
+
+  .expertise hr {
+    width: 200px;
+    margin: 10px 0 10px 30px;
+  }
+  
+
+  .getintouch {
+    width: 100%;
+    height: 270px;
+    background-color: var(--maincolor);
+    margin-top: 70px;
+    box-shadow: 0 0 10px gray;
+  }
+  .getintouch h1 {
+    font-size: 25px;
+    margin-left: 25%;
+  }
+  .getintouch p {
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  .getintouch button {
+    color: var(--secondrycolor);
+    padding: 15px;
+    background: var(--maincolor);
+    border-radius: 10px;
+    border: none;
+    margin-left: 25%;
+    margin-top: 2px;
+  }
+
+  .portfolio {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .portitem {
+    scroll-snap-align: center;
+    min-width: 75%;
+  }
+
+  .porttittele {
+    margin-left: 15%;
+  }
+
+  .portfolio img {
+    width: 90%;
+    object-fit: cover;
+  }
+
+  .portimgtittle {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .portimgtittle:hover {
+    color: var(--secondrycolor);
+  }
+
+  #contact {
+    margin-left: 15%;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+  .contact-form input {
+    background: var(--maincolor);
+    border-radius: 10px;
+    border: 2px solid var(--secondrycolor);
+    color: white;
+  }
+  .contact-form input:hover {
+    box-shadow: 0 0 10px var(--secondrycolor);
+  }
+  .contact-form button {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--secondrycolor);
+    background-color: var(--maincolor);
+    color: var(--secondrycolor);
+    margin: 20px;
+  }
+  .contact-form button:hover {
+    box-shadow: 0 0 15px var(--secondrycolor);
+    background-color: var(--secondrycolor);
+    color: var(--maincolor);
+  }
+  .i1 {
+    width: 35%;
+    height: 50px;
+    margin: 20px;
+    padding: 20px;
+  }
+  .i2 {
+    width: 35%;
+    height: 50px;
+    margin: 20px;
+    padding: 20px;
+  }
+  .i3 {
+    width: 82%;
+    height: 50px;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+  }
+  .i4 {
+    width: 82%;
+    height: 150px;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 10px gray;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+}

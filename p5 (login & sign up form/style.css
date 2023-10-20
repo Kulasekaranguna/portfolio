@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    display: flex;
+}
+.formsection {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 253, 247);
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(192, 188, 188, 0.699);
+    
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+}
+.switch {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient( to bottom right, rgb(0, 255, 106),rgb(0, 255, 170));
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    color: #ffffff;
+    text-align: justify;
+}
+.switch h3{
+    padding: 10px 0 20px 0;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px;
+    
+}
+.Loginform {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: first baseline;
+    gap: 10px;
+}
+.forminput {
+    width: 300px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 0 14px rgba(201, 197, 197, 0.486);
+    border-radius: 9px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+.forminput:hover{
+    box-shadow:0 0 65px #01ff565e;
+    transition: all linear 0.5s;
+}
+.Loginform h1{
+    padding: 30px;
+    padding-left: 100px;
+    margin-left: 30px;
+} 
+.btn {
+    width: 80px;
+    height: 32px;
+    position: relative;
+    left: 220px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 15px rgba(168, 179, 175, 0.527);
+    background:  linear-gradient( to bottom right, rgb(0, 255, 106),rgb(0, 255, 170));
+}
+.btn:hover{
+    background:  linear-gradient( to bottom right,rgb(0, 255, 170), rgb(0, 255, 106));
+    box-shadow: 1px 1px 15px rgb(0, 255, 170);
+    transition: all linear 0.2s;
+}
+.Loginform p{
+    font-size: 15px;
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+.Loginform a{
+    color: blue;
+}
